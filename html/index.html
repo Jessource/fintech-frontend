@@ -1,110 +1,165 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
-    <link href="../css/style.css" rel="stylesheet">
-
-    <title>Renda Ativa-Home</title>
-  </head>
-  <body>
-    <header class="p-2">
-      <div class="container-fluid">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="me-sm-5">
-            <img id="logo" src="../img/logo.png" width="120px" height="30px">
-          </a>
-  
-          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Dashboard - SB Admin</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="../css/dasboard.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-expand bg-light">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Renda Ativa</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <div class="nav-item text-nowrap" id="botonsair">
+                <a href="./index.html"> <button type="button" class="btn btn-outline-light me-2 text-dark" id="sair">Sair</button></a>
+            </div>
+            <!-- Navbar-->
             
-            <li><a href="#" class="nav-link px-2 text-secondary">Inicio</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Educação Financeira</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Investimento</a></li>
-            
-          </ul>
-  
-          <div class="text-end">
-            <button type="button" class="btn btn-outline-light me-2">Entrar</button>
-            <button type="button" class="btn btn-outline-light me-2">Cadastra-se</button>
-          </div>
-        </div>
-      </div>
-    </header>
-
-  <main>
-    <div class="w-100 ">
-    <div id="myCarousel" class="carousel slide " data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner w-100">
-        <div class="carousel-item active w-100">
-          <div class="container">
-            <div class="carousel-caption">
-              <img src="../img/digital.gif" height="" width="100%" class="p3">
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Inicio</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"></div>
+                                Dashboard
+                            </a>
+                            <a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon"></div>
+                                Meu cadastro
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Funcionalidades</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"></div>
+                                 Despesas
+                                <div class="sb-sidenav-collapse-arrow"></div>
+                            </a>
+                            
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"></div>
+                                Receitas
+                                <div class="sb-sidenav-collapse-arrow"></div>
+                            </a>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"></div>
+                                Metas
+                                <div class="sb-sidenav-collapse-arrow"></div>
+                            </a>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"></div>
+                                Metas
+                                <div class="sb-sidenav-collapse-arrow"></div>
+                            </a>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"></div>
+                               Categorias
+                                <div class="sb-sidenav-collapse-arrow"></div>
+                            </a>
+                            
+                            <div class="sb-sidenav-menu-heading">Informações</div>
+                            
+                            <a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon"></div>
+                                Sobre
+                            </a>
+                        </div>
+                    </div>
+                    
+                </nav>
             </div>
-          </div>
-        </div>
-        
-        <div class="carousel-item w-100">
-          <div class="container d-flex justify-content-center">
-            <div class="carousel-caption">
-              <h1>Organize sua vida financeira</h1>
-              <img src="../img/despesas.jpg " height="300px" width="500px"  >
-              <p> Cadastre suas despesas, renda e suas metas</p>
-              
-              <p><a class="btn btn-lg btn-primary" href="#">Saber mais</a></p>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4" id="texto">Dashboard </h1>
+                        <ol class="breadcrumb mb-4">
+                            
+                        </ol>
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-primary text-white mb-4">
+                                    <div class="card-body">Saldo</div>
+                                     <h4 > $R$ 5.000,00</h4>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">Detalhes</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-success text-white mb-4">
+                                    <div class="card-body">Receitas</div>
+                                       <h4 > $R$ 10.000,00</h4>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">Detalhes</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-danger text-white mb-4">
+                                    <div class="card-body">Despesas</div>
+                                    <h4 > $R$ 5.000,00</h4>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">Detalhes</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-area me-1"></i>
+                                        Despesas
+                                    </div>
+                                    <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-bar me-1"></i>
+                                        Receitas
+                                    </div>
+                                    <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                               
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Renda Ativa 2022</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
-          </div>
         </div>
-        <div class="carousel-item w-100">
-          <div class="container d-flex justify-content-center">
-            <div class="carousel-caption">
-              <h1>E tenha sua liberdade Financeira</h1>
-          
-              <img src="../img/liberdade.webp " height="300px" width="500px"  >
-              
-              <br><br>
-              <p><a class="btn btn-lg btn-primary" href="#">Saber mais</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <div class="container">
-      <h2> Gerenciador de finanças grátis</h2>
-
-      <p>Fazer o controle financeiro das suas depesas e renda ficou mais fácil. Organize suas contas, mantenha planejamento em dia pensando no seu futuro. Tudo isso pela web e o melhor, é 100% gratuito!Faça o seu cadastro e comece a usar o Renda Ativa. Com ele você vai: </p>
-      <p>Conheçer seu dinheiro, descubrir gastos supérfluos, separar seus gastos por categoria, Definir metas para economizar</p>
-
-    </div>
-  
-    
-  </main>
-  <footer>
-    <div class="container p-3">
-      <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sobre</a></li>
-        </ul>
-        <p class="text-center text-muted">&copy; 2022 Renda Ativa </p>
-      </footer>
-    </div>
-   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-  </body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
 </html>
