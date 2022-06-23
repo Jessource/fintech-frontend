@@ -6,7 +6,7 @@ header{
 }
 body {
     
-    background-color: rgb(88, 63, 177);
+    background-color: white;
   }
  footer{
   background-color: rgb(29, 5, 116);
@@ -155,7 +155,7 @@ body {
   
   h2,p{
     text-align: center;
-    color: bisque;
+    color: rgb(3, 3, 3);
     margin-bottom: 50px;
   }
   
