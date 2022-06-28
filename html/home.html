@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <link href="../css/style.css" rel="stylesheet">
 
@@ -27,9 +27,9 @@
           </ul>
   
           <div class="text-end">
-            <button type="button" class="btn btn-outline-light me-2">
-              <a href="./login.html">Entrar</a>
-            </button>
+            <a href="./login.html">
+              <button type="button" class="btn btn-outline-light me-2">Entrar</button>
+            </a>
             <button type="button" class="btn btn-outline-light me-2">Cadastra-se</button>
           </div>
         </div>
@@ -37,46 +37,53 @@
     </header>
 
   <main>
-    <div class="w-100 ">
-    <div id="myCarousel" class="carousel slide " data-bs-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner w-100">
-        <div class="carousel-item active w-100">
-          <div class="container">
-            <div class="carousel-caption">
-              <img src="../img/digital.gif" height="" width="100%" class="p3">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-8 col-sm-8 col-md-7 col-lg-6">
+              <img src="../img/digital.gif" width="100%">
             </div>
           </div>
         </div>
-        
-        <div class="carousel-item w-100">
-          <div class="container d-flex justify-content-center">
-            <div class="carousel-caption">
+
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12 d-flex justify-content-center text-center">
               <h1>Organize sua vida financeira</h1>
-              <img src="../img/despesas.jpg " height="300px" width="500px"  >
-              <p> Cadastre suas despesas, renda e suas metas</p>
-              
-              <p><a class="btn btn-lg btn-primary" href="#">Saber mais</a></p>
+            </div>
+            <div class="col-8 col-sm-8 col-md-7 col-lg-5">
+              <img src="../img/despesas.jpg" width="100%">
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-2">
+              <a class="btn btn-lg btn-primary" href="#">Saiba mais</a>
             </div>
           </div>
         </div>
-        <div class="carousel-item w-100">
-          <div class="container d-flex justify-content-center">
-            <div class="carousel-caption">
+
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12 d-flex justify-content-center text-center">
               <h1>E tenha sua liberdade Financeira</h1>
-          
-              <img src="../img/liberdade.webp " height="300px" width="500px"  >
-              
-              <br><br>
-              <p><a class="btn btn-lg btn-primary" href="#">Saber mais</a></p>
+            </div>
+            <div class="col-8 col-sm-8 col-md-7 col-lg-4">
+              <img src="../img/liberdade.webp" width="100%">
+            </div>
+            <div class="col-12 mt-2">
+              <p>
+                <a class="btn btn-lg btn-primary" href="#">Saiba mais</a>
+              </p>
             </div>
           </div>
         </div>
       </div>
+
       <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -89,13 +96,9 @@
 
     <div class="container">
       <h2> Gerenciador de finanças grátis</h2>
-
       <p>Fazer o controle financeiro das suas depesas e renda ficou mais fácil. Organize suas contas, mantenha planejamento em dia pensando no seu futuro. Tudo isso pela web e o melhor, é 100% gratuito!Faça o seu cadastro e comece a usar o Renda Ativa. Com ele você vai: </p>
       <p>Conheçer seu dinheiro, descubrir gastos supérfluos, separar seus gastos por categoria, Definir metas para economizar</p>
-
-    </div>
-  
-    
+    </div>    
   </main>
   <footer>
     <div class="container p-3">
@@ -113,6 +116,6 @@
     </footer>
     </div>
    </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>
